@@ -11,7 +11,7 @@ config = context.config
 
 config.set_main_option(
     "sqlalchemy.url",
-    db_session.get_url(),
+    db_connection.get_url(),
 )
 
 # Interpret the config file for Python logging.

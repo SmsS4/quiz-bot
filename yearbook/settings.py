@@ -1,5 +1,7 @@
 import dynaconf
 
+from yearbook import models
+
 all_settings = dynaconf.Dynaconf(
     settings_files=[
         "settings.yaml",
@@ -35,3 +37,6 @@ all_settings.validators.validate_all()
 
 
 db = all_settings.DB
+telegram = all_settings.TELEGRAM
+bot = all_settings.BOT
+quizzes = [models.quiz.Quiz(**quiz) for quiz in bot.QUIZZES]
