@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "yearbook"
+version = "0.1.0"
+description = ""
+authors = ["SmsS4 <smss.lite@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+gaylogger = "^1.0.0"
+python-telegram-bot = "^20.3"
+alembic = "^1.11.1"
+dynaconf = "^3.1.12"
+sqlalchemy = "^2.0.15"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

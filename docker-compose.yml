@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:15.3-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=bot97
+      - POSTGRES_PASSWORD=iJU$Eb2x28%S73NZpcf
+      - POSTGRES_DB=bot97
+    ports:
+      - "5432:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local
